@@ -1,0 +1,12 @@
+
+<p>
+  My Song
+</p>
+<% @songs.each do |song| %>
+  <%= label_tag 'name' %><br>
+  <%= song.name %><br>
+  <%= label_tag 'artist' %>
+  <%= song.artist_id %>
+  <%= label_tag 'genre' %>
+  <%= song.genre_id %>
+<% end %>
